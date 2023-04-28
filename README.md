@@ -1,12 +1,12 @@
 # rgb-leds-controller
-A complete tool to change colors and effects from RGB LEDs integrated with Magic Home App.
+A complete tool where you are able to change colors and effects on RGB LEDs integrated with Magic Home App.
 
 # Getting Started
-You can use with a external IP or a private network IP address. 
-Is compatible with all Magic Home adapter devices.
+You can use it with an external IP or a private network IP address. 
+It's compatible with all Magic Home adapter devices.
 
-- Change the IP Address on backend/src/controllers/LedController.ts.
-- Check if the IP Address is valid and, for external connections, the port 5577 is opened.
+- Change the IP Address on backend/src/controllers/LedController.ts file.
+- Check if the IP Address is valid and, for external connections, the port 5577 is open.
 
 Web user interface
 ![User interface](https://user-images.githubusercontent.com/50047226/235032242-c4bc44a6-008f-4a52-9596-248cb91323fb.png)
