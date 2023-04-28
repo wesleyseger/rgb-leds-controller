@@ -1,0 +1,17 @@
+.fieldWrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #251954;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+
+    small:first-child {
+        color: #1efbff;
+        font-weight: 300;
+    }
+
+    small:last-child {
+        font-weight: 400;
+    }
+}
