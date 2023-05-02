@@ -67,11 +67,6 @@ export const getStatus = async (req: Request, res: Response) => {
     try {
         const result = await control.queryState();
 
-        const hexColor = "#" +
-            componentToHex(result.color.red) +
-            componentToHex(result.color.green) +
-            componentToHex(result.color.blue);
-
         //@ts-ignore
         const currEffect = effects.find(item => item.effect === result.pattern);
 
@@ -92,8 +87,4 @@ export const scanDevices = async (req: Request, res: Response) => {
     const discovery = new Discovery();
     const scanResult = await discovery.scan(3000);
     res.send(scanResult)
-}
-
-const componentToHex = (c: number) => {
-    return c.toString(16).padStart(2, '0');
 }

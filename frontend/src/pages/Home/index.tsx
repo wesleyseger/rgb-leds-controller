@@ -73,7 +73,7 @@ export const Home = () => {
     if (isLoadingStatus || isLoadingColor || isLoadingEffect || isLoadingPowerOff || isLoadingPowerOn)
         return <div className={styles.homeWrapper}><Loader /></div>
     if (!status.device)
-        return <div className={styles.homeWrapper}>Não foi possível conetar ao dispositivo.</div>
+        return <div className={styles.homeWrapper}>Não foi possível conectar ao dispositivo.</div>
     if (error)
         return <div className={styles.homeWrapper}>Erro desconhecido.</div>
 

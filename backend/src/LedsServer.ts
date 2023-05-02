@@ -14,20 +14,20 @@ app.use(router);
 const PORT = 5020;
 const HOST = '';
 
-const KEY = fs.readFileSync('/etc/letsencrypt/live/rbt.psi.br/privkey.pem');
-const CA = fs.readFileSync('/etc/letsencrypt/live/rbt.psi.br/chain.pem');
-const CERT = fs.readFileSync('/etc/letsencrypt/live/rbt.psi.br/cert.pem');
+// const KEY = fs.readFileSync('/etc/letsencrypt/live/rbt.psi.br/privkey.pem');
+// const CA = fs.readFileSync('/etc/letsencrypt/live/rbt.psi.br/chain.pem');
+// const CERT = fs.readFileSync('/etc/letsencrypt/live/rbt.psi.br/cert.pem');
 
-const https_options = {
-    key: KEY,
-    ca: CA,
-    cert: CERT
-}
+// const https_options = {
+//     key: KEY,
+//     ca: CA,
+//     cert: CERT
+// }
 
-https.createServer(https_options, app).listen(PORT, HOST, () => {
-    console.log(`Leds Controller HTTPS Listening! Port: ${PORT}`);
-})
+// https.createServer(https_options, app).listen(PORT, HOST, () => {
+//     console.log(`Leds Controller HTTPS Listening! Port: ${PORT}`);
+// })
 
-// app.listen(PORT, () => {
-//     return console.log(`Leds Controller listening at PORT ${PORT}.`);
-// });
+app.listen(PORT, () => {
+    return console.log(`Leds Controller listening at PORT ${PORT}.`);
+});
